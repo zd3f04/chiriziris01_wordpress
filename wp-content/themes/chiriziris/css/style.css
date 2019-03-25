@@ -1,0 +1,415 @@
+﻿@charset "utf-8";
+/* 基本レイアウト ここから↓ */
+@import url(common.css);
+a {text-decoration: none;
+   color: black;
+}
+a:hover { color: gray;
+   }
+   .more {
+   text-align: right;
+   font-style:italic;
+ }
+   .link_line:hover {
+      color: black;
+text-decoration: underline;
+   }
+#sidenavi a:hover {color: black;
+text-decoration: underline;
+}
+footer a:hover {
+   color: black;
+text-decoration: underline;
+}
+
+/*a:visited {
+  color:silver;
+}*/
+#wrap {
+width:960px;
+margin:0px auto;
+}
+ul {
+  list-style: none;
+}
+img #page-name {
+   width: 800px;
+   height:148px;
+ text-align:center;
+}
+header ul {
+  text-align: right;
+}
+header li {
+   display: inline-block;
+}
+
+ #sns-box img {
+   width: 30px;
+height: 30px;
+ }
+#sidenavi {
+
+float:left;
+width:198px;
+height:auto;
+margin:10px 10px 10px 0px;
+
+}
+
+#contents {
+float:left;
+height:auto;
+margin:10px 0px 10px 0px;
+}
+footer{
+   clear: both;
+   width: 940px;
+   /*padding: 90px 15px 70px;*/
+   height:180px;
+   margin: 0 auto;
+   position: relative;
+   line-height: 120%;
+}
+.news_topics {
+   line-height: 160%;
+   padding: 10px;
+   overflow: hidden;
+}
+.live_topics {
+line-height: 160%;
+padding: 10px;
+   overflow: hidden;
+
+}
+.disco_topics {
+line-height: 160%;
+padding: 10px;
+   overflow: hidden;
+
+}
+
+.news_date {
+  float: left;
+    margin-right: 10px;
+  font-size:16px;
+font-style:italic;
+}
+.live_date {
+   float: left;
+    margin-right: 10px;
+     font-size: 16px;
+  font-style:italic;
+}
+.news_title {
+overflow: hidden;
+}
+.live_title {
+overflow: hidden;
+}
+.release_on_top {
+overflow: hidden;
+}
+.release_on_top_info {
+    display:  inline-block;     /* インラインブロック要素にする */
+    vertical-align:  top;       /* 要素を上揃えにする */
+    margin-bottom: 10px;        /* 要素同士の隙間調整 */
+    box-sizing: border-box;     /* 崩れ防止 */            /* 高さ指定 */
+      position: relative;
+}
+.release_on_top_pic {
+  width: 200px;
+  height:auto;
+
+}
+.release_on_top_cat {
+ /* position: absolute;*/
+}
+.top_english {
+  color: grey;
+}
+#footer-sitename {
+ float: left;
+}
+#footer-menu  {
+   float: left;
+}
+#footer-sns-menu {
+    float: left;
+}
+#footer-snv {
+   text-align: right;
+}
+#footer-snv li {
+    display: inline-block;
+
+}*/
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+display: block;
+}
+body {
+font-family: 'Yu Gothic UI',YuGothic,'Yu Gothic','ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif;
+}
+#page_top{
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 20px;
+  bottom: 10px;
+  background: gray;
+  opacity: 0.6;
+  border-radius: 50%;
+}
+#page_top a{
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+}
+#page_top a::before{
+  font-family: FontAwesome;
+  content: '\f102';
+  font-size: 25px;
+  color: #fff;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
+/////////////
+body {
+  margin: 0;
+  padding: 0;
+  background: url(bg_body.gif) repeat; /* 背景画像(白の1x1) */
+  background-attachment: fixed;
+}
+
+.wrapp {
+  position: relative; /* IE6のサイドバー固定用 */
+  width: 800px;
+  margin: 0 auto;
+}
+
+.container {
+  width: auto;
+  padding:  0 0 0 280px; /* サイドバーとの距離 */
+}
+
+.side_bar {
+  position: fixed; /* スクロールしても位置を固定 */
+/*  top: 130px;*/
+  width: 228px;
+ /* padding: 10px;*/
+  /*border: 1px solid #CCC;*/
+}
+
+.contents {
+
+  width:auto;
+/*  padding-top: 106px;*/
+/*  border: 1px solid #CCC;*/
+}
+
+/* IE6 */
+.side_bar    {
+  _position: absolute;
+  _top: expression(eval(document.documentElement.scrollTop+54)); /* サイドバー位置調整 */
+}
+///////
+.bxslider {
+  text-align: center;
+}
+.bio_name {
+  font-weight: bold;
+}
+.bio_en {
+  color: gray;
+}
+/* ▼メニューバーの装飾 */
+/* -------------------- */
+ul.ddmenu {
+   margin: 0px;               /* メニューバー外側の余白(ゼロ) */
+   padding: 0px 0px 0px 15px; /* メニューバー内側の余白(左に15px) */
+   background-color: white; /* バーの背景色(濃い赤色) */
+}
+
+/* -------------------------- */
+/* ▼メインメニュー項目の装飾 */
+/* -------------------------- */
+ul.ddmenu li {
+/*   width: 80px;           /* メニュー項目の横幅(125px) */
+   display: inline-block;  /* ★1:横並びに配置する */
+   list-style-type: none;  /* ★2:リストの先頭記号を消す */
+   position: relative;     /* ★3:サブメニュー表示の基準位置にする */
+   width: 129px;
+  display: inline-block;
+}
+ul.ddmenu a {
+   background-color: white; /* メニュー項目の背景色(濃い赤色) */
+   color: black;              /* メニュー項目の文字色(白色) */
+   line-height: 40px;         /* メニュー項目のリンクの高さ(40px) */
+   text-align: center;        /* メインメニューの文字列の配置(中央寄せ) */
+   text-decoration: none;     /* メニュー項目の装飾(下線を消す) */
+
+ /*  display: block;            /* ★4:項目内全域をリンク可能にする */
+}
+ul.ddmenu a:hover {
+ /*  background-color: gray;  メニュー項目にマウスが載ったときの背景色(淡いピンク) */
+   color: gray;            /* メニュー項目にマウスが載ったときの文字色(濃い赤色) */
+}
+
+/* ▼サブメニューは、とりあえず非表示にしておく */
+ul.ddmenu ul {
+   display: none;         /* ★5:非表示にする */
+}
+/* -------------------- */
+/* ▼サブメニューの装飾 */
+/* -------------------- */
+ul.ddmenu ul {
+   display: none;       /* ★1:標準では非表示にする */
+   margin: 0px;         /* ★2:サブメニュー外側の余白(ゼロ) */
+   padding: 0px;        /* ★3:サブメニュー内側の余白(ゼロ) */
+   position: absolute;  /* ★4:絶対配置にする */
+}
+
+/* ---------------------------------- */
+/* ▼サブメニューがある場合に開く処理 */   /* ※サブメニューが1階層しか存在しない場合の記述 */
+/* ---------------------------------- */
+ul.ddmenu li:hover ul {
+   display: block;}      /*
+   ★5:マウスポインタが載っている項目の内部にあるリストを表示する */
+   /* ------------------------ */
+/* ▼サブメニュー項目の装飾 */
+/* ------------------------ */
+ul.ddmenu ul li {   /* ※A */
+   width: 135px; }              /* サブメニュー1項目の横幅(135px) */
+
+.flex{
+  padding: 2.5% 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.flex > *{
+  min-width: 8%;
+  flex-basis: 25%;
+  background: #fff;
+  font-size: 64px;
+  text-align: center;
+}
+/*.flex,
+.flex > *{
+  border: 3px solid #aaa;
+}*/
+.disk_all{
+height:100px; // 画像サイズ
+  width:100px; // 画像サイズ
+  object-fit: cover; // 比率の差から出る余った領域をトリミング
+  object-position: 50% 20%; // x軸0%左揃え100%右揃え y軸0%上揃え100%下揃え
+}
+.flex img:hover {
+      opacity: 0.5 ;
+    }
+    .event_name {
+      margin-top: 0px;
+    font-size: 25px;
+    }
+
+.blog_topics {
+   line-height: 160%;
+   padding: 10px;
+   overflow: hidden;
+}
+.blog_topics img {
+  height: 300px;
+}
+.blog_date {
+  float: left;
+    margin-right: 10px;
+  font-size:16px;
+font-style:italic;
+}
+
+.blog_title {
+overflow: hidden;
+}
+
+.blog_english {
+  color: grey;
+}
+/////////////
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.movie_flex {
+  width: 680px;
+}
+.movie_all{
+  margin: 10px 2px 10px 2px ;
+  float: left;
+  list-style: none;
+}
+.movie_pic {
+ height:auto;
+  width:335px;
+  object-fit: cover;
+  object-position: 50% 20%;
+}
+/*.flex,
+.flex > *{
+  border: 3px solid #aaa;
+}*/
+
+.movie_flex img:hover {
+      opacity: 0.5 ;
+    }
+    #disc_title_cover {
+ float: left;
+      padding-right: 15px;
+    }
+    #disc_title_info {
+float: left;
+      padding-right: 10px;
+    }
+    #disc_title_shops {
+      float: left;
+      padding-top: 10px;
+
+      padding-right: 5px;
+      width: 300px;
+    }
+    #disc_title_pic {
+       height:300px; // 画像サイズ
+  width:300px; // 画像サイズ
+  object-fit: cover; // 比率の差から出る余った領域をトリミング
+  object-position: 50% 20%; // x軸0%左揃え100%右揃え y軸0%上揃え100%下揃え
+    }
+    section {
+      width: 640px;
+      height: auto;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    .english {
+      color: gray;
+    }
+input[type="text"] {
+  width: 200px;
+}
+input[type="email"] {
+  width: 300px;
+
+}
+textarea {
+  width: 300px;
+  height:100px;
+}
