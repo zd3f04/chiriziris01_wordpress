@@ -308,7 +308,8 @@ ul.ddmenu ul li {   /* ※A */
 .flex > *{
   border: 3px solid #aaa;
 }*/
-.disk_all{
+#disk_all{
+	padding-right: 5px;
 height:100px; // 画像サイズ
   width:100px; // 画像サイズ
   object-fit: cover; // 比率の差から出る余った領域をトリミング
@@ -358,7 +359,7 @@ overflow: hidden;
   float: left;
   list-style: none;
 }
-.movie_pic {
+#movie_pic {
  height:auto;
   width:335px;
   object-fit: cover;
